@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="lib" path="/home/dingpengwei/workspace/android44source/out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes.jar"/>
-	<classpathentry kind="lib" path="/home/dingpengwei/workspace/android44source/out/target/common/obj/JAVA_LIBRARIES/core_intermediates/classes.jar"/>
-	<classpathentry kind="lib" path="/home/dingpengwei/workspace/android44source/out/target/common/obj/JAVA_LIBRARIES/bouncycastle_intermediates/classes.jar"/>
+	<classpathentry kind="lib" path="libs/bouncycastle_intermediates.jar"/>
+	<classpathentry kind="lib" path="libs/core_intermediates.jar"/>
+	<classpathentry kind="lib" path="libs/framework_intermediates.jar"/>
+	<classpathentry kind="lib" path="libs/guava_javalib.jar"/>
+	<classpathentry kind="lib" path="libs/jsr_305_javalib.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>

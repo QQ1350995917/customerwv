@@ -29,8 +29,8 @@ import android.util.Log;
  */
 public final class WebViewFactory {
 
-    private static final String CHROMIUM_WEBVIEW_FACTORY =
-            "com.android.webview.chromium.WebViewChromiumFactoryProvider";
+//    private static final String CHROMIUM_WEBVIEW_FACTORY = "com.android.webview.chromium.WebViewChromiumFactoryProvider";
+	private static final String CHROMIUM_WEBVIEW_FACTORY = "android.webkit2.chromium.WebViewChromiumFactoryProvider";
 
     private static final String LOGTAG = "WebViewFactory";
 
