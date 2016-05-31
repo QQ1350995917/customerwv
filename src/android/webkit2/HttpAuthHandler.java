@@ -17,8 +17,8 @@
 package android.webkit2;
 
 import android.os.Handler;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.webkit2.WebView;
+import android.webkit2.WebViewClient;
 
 /**
  * Represents a request for HTTP authentication. Instances of this class are

@@ -21,10 +21,10 @@ import android.net.http.SslError;
 import android.os.Message;
 import android.view.KeyEvent;
 import android.view.ViewRootImpl;
-import android.webkit.HttpAuthHandler;
-import android.webkit.SslErrorHandler;
-import android.webkit.WebResourceResponse;
-import android.webkit.WebView;
+import android.webkit2.HttpAuthHandler;
+import android.webkit2.SslErrorHandler;
+import android.webkit2.WebResourceResponse;
+import android.webkit2.WebView;
 
 public class WebViewClient {
 
