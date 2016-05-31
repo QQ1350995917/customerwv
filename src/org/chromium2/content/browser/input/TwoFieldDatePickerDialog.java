@@ -11,8 +11,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Build;
-import android.os.Bundle;
-import android.view.View;
+import android.webkit2.R;
 
 public abstract class TwoFieldDatePickerDialog extends AlertDialog implements OnClickListener, OnMonthOrWeekChangedListener {
 

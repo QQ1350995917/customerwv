@@ -5,16 +5,16 @@
 
 package org.chromium2.ui.autofill;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.text.TextUtils;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit2.R;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 /**
  * Autofill suggestion adapter for AutofillWindow.

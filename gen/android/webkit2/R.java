@@ -12,6 +12,14 @@ public final class R {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int select_dialog_multichoice=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int select_dialog_singlechoice=0x7f010002;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int webViewStyle=0x7f010000;
     }
     public static final class dimen {
@@ -24,35 +32,62 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
+        public static final int link_preview_overlay_radius=0x7f040002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int autofill_popup_background=0x7f020000;
+        public static final int autofill_popup_background_down=0x7f020001;
+        public static final int autofill_popup_background_up=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int ic_media_video_poster=0x7f020004;
+        public static final int ic_menu_search_holo_light=0x7f020005;
+        public static final int ic_menu_share_holo_light=0x7f020006;
+        public static final int ondemand_overlay=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f090004;
-        public static final int copy=0x7f090007;
-        public static final int cut=0x7f090006;
-        public static final int edit=0x7f090002;
-        public static final int find=0x7f09000a;
-        public static final int find_next=0x7f09000d;
-        public static final int find_prev=0x7f09000c;
-        public static final int matches=0x7f090003;
-        public static final int message=0x7f090000;
-        public static final int paste=0x7f090008;
-        public static final int select_all=0x7f090005;
-        public static final int share=0x7f090009;
-        public static final int value=0x7f090001;
-        public static final int websearch=0x7f09000b;
+        public static final int action_settings=0x7f07000d;
+        public static final int autofill_label=0x7f070002;
+        public static final int autofill_menu_text=0x7f070001;
+        public static final int autofill_popup_window=0x7f070000;
+        public static final int autofill_sublabel=0x7f070003;
+        public static final int copy=0x7f070016;
+        public static final int cut=0x7f070015;
+        public static final int date_picker=0x7f070004;
+        public static final int edit=0x7f07000b;
+        public static final int find=0x7f070019;
+        public static final int find_next=0x7f07001c;
+        public static final int find_prev=0x7f07001b;
+        public static final int matches=0x7f07000c;
+        public static final int message=0x7f070006;
+        public static final int paste=0x7f070017;
+        public static final int pickers=0x7f070008;
+        public static final int position_in_year=0x7f070009;
+        public static final int select_action_menu_copy=0x7f070010;
+        public static final int select_action_menu_cut=0x7f07000f;
+        public static final int select_action_menu_paste=0x7f070011;
+        public static final int select_action_menu_select_all=0x7f07000e;
+        public static final int select_action_menu_share=0x7f070012;
+        public static final int select_action_menu_web_search=0x7f070013;
+        public static final int select_all=0x7f070014;
+        public static final int share=0x7f070018;
+        public static final int time_picker=0x7f070005;
+        public static final int value=0x7f070007;
+        public static final int websearch=0x7f07001a;
+        public static final int year=0x7f07000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int js_prompt=0x7f030001;
-        public static final int webview_find=0x7f030002;
+        public static final int autofill_text=0x7f030001;
+        public static final int date_time_picker_dialog=0x7f030002;
+        public static final int js_prompt=0x7f030003;
+        public static final int two_field_date_picker=0x7f030004;
+        public static final int webview_find=0x7f030005;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int webview_copy=0x7f080001;
-        public static final int webview_find=0x7f080002;
+        public static final int main=0x7f090000;
+        public static final int select_action_menu=0x7f090001;
+        public static final int webview_copy=0x7f090002;
+        public static final int webview_find=0x7f090003;
     }
     public static final class plurals {
         /**  This is used to express that something occurred within the last X days (e.g., Last 7 days). 
@@ -61,7 +96,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int matches_found=0x7f060001;
     }
     public static final class string {
+        public static final int accessibility_content_view=0x7f05001e;
+        public static final int accessibility_date_picker_month=0x7f050024;
+        public static final int accessibility_date_picker_week=0x7f050028;
+        public static final int accessibility_date_picker_year=0x7f050025;
+        public static final int accessibility_datetime_picker_date=0x7f050021;
+        public static final int accessibility_datetime_picker_time=0x7f050022;
         public static final int action_settings=0x7f050002;
+        public static final int actionbar_share=0x7f05002a;
+        public static final int actionbar_web_search=0x7f05002b;
         public static final int app_name=0x7f050000;
         /**  Preference framework strings. 
          */
@@ -72,6 +115,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  Item on EditText context menu.  This action is used to cut selected the text into the clipboard.  
          */
         public static final int cut=0x7f050010;
+        public static final int date_picker_dialog_clear=0x7f050023;
+        public static final int date_picker_dialog_set=0x7f050027;
+        public static final int date_picker_dialog_title=0x7f050020;
+        public static final int date_time_picker_dialog_title=0x7f05001f;
         public static final int find=0x7f050014;
         public static final int find_next=0x7f050016;
         public static final int find_on_page=0x7f05000d;
@@ -88,6 +135,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int js_dialog_title=0x7f050006;
         public static final int js_dialog_title_default=0x7f050005;
         public static final int last_month=0x7f050003;
+        public static final int media_player_error_button=0x7f05001b;
+        public static final int media_player_error_text_invalid_progressive_playback=0x7f050019;
+        public static final int media_player_error_text_unknown=0x7f05001a;
+        public static final int media_player_error_title=0x7f050018;
+        public static final int media_player_loading_video=0x7f05001c;
+        public static final int month_picker_dialog_title=0x7f050026;
         public static final int no_matches=0x7f05000e;
         /**  Preference framework strings. 
          */
@@ -101,6 +154,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int selectAll=0x7f05000f;
         public static final int share=0x7f050013;
         public static final int websearch=0x7f050015;
+        public static final int webviewchromium_private_browsing_warning=0x7f05001d;
+        public static final int week_picker_dialog_title=0x7f050029;
     }
     public static final class style {
         /** 
@@ -124,10 +179,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
+        public static final int AutofillPopupWindow=0x7f080003;
+        public static final int SelectPopupDialog=0x7f080002;
     }
 }

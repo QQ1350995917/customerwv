@@ -44,6 +44,7 @@ import android.view.accessibility.AccessibilityNodeProvider;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit2.R;
 import android.widget.AbsoluteLayout;
 import android.widget.FrameLayout;
 
@@ -725,8 +726,7 @@ import java.util.Map;
         if (R.string.accessibility_content_view == 0) {
             Log.w(TAG, "Setting contentDescription to 'Web View' as no value was specified.");
         } else {
-            contentDescription = mContext.getResources().getString(
-                    R.string.accessibility_content_view);
+            contentDescription = mContext.getResources().getString(R.string.accessibility_content_view);
         }
         mContainerView.setContentDescription(contentDescription);
         mWebContentsObserver = new WebContentsObserverAndroid(this) {

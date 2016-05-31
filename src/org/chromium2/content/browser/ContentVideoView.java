@@ -21,6 +21,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit2.R;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.MediaController;
@@ -220,16 +221,11 @@ public class ContentVideoView
 
     private void initResources(Context context) {
         if (mPlaybackErrorText != null) return;
-        mPlaybackErrorText = context.getString(
-                R.string.media_player_error_text_invalid_progressive_playback);
-        mUnknownErrorText = context.getString(
-                R.string.media_player_error_text_unknown);
-        mErrorButton = context.getString(
-                R.string.media_player_error_button);
-        mErrorTitle = context.getString(
-                R.string.media_player_error_title);
-        mVideoLoadingText = context.getString(
-                R.string.media_player_loading_video);
+        mPlaybackErrorText = context.getString(R.string.media_player_error_text_invalid_progressive_playback);
+        mUnknownErrorText = context.getString(R.string.media_player_error_text_unknown);
+        mErrorButton = context.getString(R.string.media_player_error_button);
+        mErrorTitle = context.getString(R.string.media_player_error_title);
+        mVideoLoadingText = context.getString(R.string.media_player_loading_video);
     }
 
     private void showContentVideoView() {

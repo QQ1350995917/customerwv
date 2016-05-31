@@ -15,6 +15,7 @@ import android.text.TextUtils;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit2.R;
 
 /**
  * An ActionMode.Callback for in-page selection. This class handles both the editable and

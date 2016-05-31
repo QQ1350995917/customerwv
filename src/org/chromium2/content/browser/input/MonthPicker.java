@@ -5,6 +5,7 @@
 package org.chromium2.content.browser.input;
 
 import android.content.Context;
+import android.webkit2.R;
 
 import java.text.DateFormatSymbols;
 import java.util.Arrays;

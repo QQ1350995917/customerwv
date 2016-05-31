@@ -39,6 +39,7 @@ import android.webkit2.GeolocationPermissions;
 import android.webkit2.JsDialogHelper;
 import android.webkit2.JsPromptResult;
 import android.webkit2.JsResult;
+import android.webkit2.R;
 import android.webkit2.SslErrorHandler;
 import android.webkit2.ValueCallback;
 import android.webkit2.WebChromeClient;
@@ -790,8 +791,7 @@ public class WebViewContentsClientAdapter extends AwContentsClient {
             }
             if (result == null) {
                 Bitmap poster = BitmapFactory.decodeResource(
-                        mWebView.getContext().getResources(),
-                        R.drawable.ic_media_video_poster);
+                        mWebView.getContext().getResources(),R.drawable.ic_media_video_poster);
                 result = Bitmap.createBitmap(poster.getWidth(),
                                              poster.getHeight(),
                                              poster.getConfig());

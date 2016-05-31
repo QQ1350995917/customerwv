@@ -5,6 +5,7 @@
 package org.chromium2.content.browser.input;
 
 import android.content.Context;
+import android.webkit2.R;
 
 public class MonthPickerDialog extends TwoFieldDatePickerDialog {
 

@@ -27,6 +27,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.view.animation.OvershootInterpolator;
+import android.webkit2.R;
 
 /**
  * PopupZoomer is used to show the on-demand link zooming popup. It handles manipulation of the

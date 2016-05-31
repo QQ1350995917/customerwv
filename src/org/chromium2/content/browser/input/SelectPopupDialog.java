@@ -12,6 +12,7 @@ import android.content.res.TypedArray;
 import android.util.SparseBooleanArray;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit2.R;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -105,8 +106,7 @@ public class SelectPopupDialog {
 
     private int getSelectDialogLayout(boolean isMultiChoice) {
         int resource_id;
-        TypedArray styledAttributes = mContentViewCore.getContext().obtainStyledAttributes(
-                R.style.SelectPopupDialog, SELECT_DIALOG_ATTRS);
+        TypedArray styledAttributes = mContentViewCore.getContext().obtainStyledAttributes(R.style.SelectPopupDialog, SELECT_DIALOG_ATTRS);
         resource_id = styledAttributes.getResourceId(isMultiChoice ? 0 : 1, 0);
         styledAttributes.recycle();
         return resource_id;

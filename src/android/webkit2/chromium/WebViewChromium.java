@@ -16,6 +16,24 @@
 
 package android.webkit2.chromium;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.lang.annotation.Annotation;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Queue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.TimeUnit;
+
+import org.chromium2.android_webview.AwContents;
+import org.chromium2.android_webview.AwLayoutSizer;
+import org.chromium2.android_webview.AwPrintDocumentAdapter;
+import org.chromium2.android_webview.AwSettings;
+import org.chromium2.base.ThreadUtils;
+import org.chromium2.content.browser.LoadUrlParams;
+
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -45,6 +63,7 @@ import android.view.inputmethod.InputConnection;
 import android.webkit2.DownloadListener;
 import android.webkit2.FindActionModeCallback;
 import android.webkit2.JavascriptInterface;
+import android.webkit2.R;
 import android.webkit2.ValueCallback;
 import android.webkit2.WebBackForwardList;
 import android.webkit2.WebChromeClient;
@@ -53,26 +72,6 @@ import android.webkit2.WebView;
 import android.webkit2.WebViewClient;
 import android.webkit2.WebViewProvider;
 import android.widget.TextView;
-
-import org.chromium2.android_webview.AwBrowserContext;
-import org.chromium2.android_webview.AwContents;
-import org.chromium2.android_webview.AwLayoutSizer;
-import org.chromium2.android_webview.AwPrintDocumentAdapter;
-import org.chromium2.android_webview.AwSettings;
-import org.chromium2.base.ThreadUtils;
-import org.chromium2.content.browser.LoadUrlParams;
-import org.chromium2.net.NetworkChangeNotifier;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.lang.annotation.Annotation;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.FutureTask;
-import java.util.concurrent.TimeUnit;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Queue;
 
 /**
  * This class is the delegate to which WebViewProxy forwards all API calls.
@@ -203,8 +202,7 @@ class WebViewChromium implements WebViewProvider,
             } else {
                 Log.w(TAG, msg);
                 TextView warningLabel = new TextView(mWebView.getContext());
-                warningLabel.setText(mWebView.getContext().getString(
-                        R.string.webviewchromium_private_browsing_warning));
+                warningLabel.setText(mWebView.getContext().getString(R.string.webviewchromium_private_browsing_warning));
                 mWebView.addView(warningLabel);
             }
         }

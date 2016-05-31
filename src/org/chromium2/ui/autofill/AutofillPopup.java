@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnLayoutChangeListener;
+import android.webkit2.R;
 import android.widget.AdapterView;
 import android.widget.ListPopupWindow;
 import android.widget.TextView;
